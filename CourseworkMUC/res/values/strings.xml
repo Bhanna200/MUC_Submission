@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CourseworkMUC</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="spinner_1_title">Map Type</string>
+    <string name="spinner_2_title">Past Cities</string>
+    <string name="user_Location">User Location</string>
+    <string name="check_box_map">Show Location</string>
+    <string name="ok_ok">OK</string>
+    <string name="imageDesc">IMAGEHERE</string>
+    <string name="past_games_button">Past Games</string>
+    <string name="test_past_games_button">Test Past Games</string>     
+    <string name="title_activity_last_country">LastCountryActivity</string>    
+    <string name="str_btn_goto">Goto Location</string>
+    <string name="enter_location">Enter location</string>
+    
+</resources>

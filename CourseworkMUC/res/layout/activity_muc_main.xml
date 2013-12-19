@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout 
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent"
+    android:focusable="true"  
+    android:focusableInTouchMode="true" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!--Map  -->
+    <fragment 
+    android:layout_height="match_parent" 
+    android:layout_width="match_parent" 
+    android:name="com.google.android.gms.maps.MapFragment" 
+    android:id="@+id/map"/>
+     
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+    
+    <!--Map Types spinner -->
+
+	<Spinner
+	    android:id="@+id/spinner1"
+	    android:layout_width="114dp"
+	    android:layout_height="50dp"
+	    android:paddingBottom="5dp"
+	    android:gravity="center"	     
+	    android:background="@drawable/back"
+	    android:textColor="#FF9900" />
+	
+	<!--City Names spinner -->
+
+	<Spinner
+	    android:id="@+id/spinner2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="50dp"
+	    android:paddingBottom="5dp"
+	    android:gravity="center"
+	    android:background="@drawable/back"
+	    android:textColor="#FF9900" />
+	
+	<!--Goto Button -->	
+	<Button
+     android:id="@+id/gotoButton"
+     android:layout_width="wrap_content"
+     android:layout_height="50dp"
+     android:paddingBottom="5dp"
+     android:gravity="center"
+     android:background="@drawable/back"
+     android:text="@string/str_btn_goto"
+     
+     android:textColor="#FF9900"
+      />
+ 
+	<!--Edit Text Box to enter location -->
+     <EditText
+     android:id="@+id/enterlocation"
+     android:background="@drawable/back"
+     android:layout_width="wrap_content"
+     android:layout_height="50dp"
+     android:inputType="text"
+     android:paddingBottom="5dp"
+     android:textColor="#FFFFFF"
+     android:textColorHint="#FFFFFF"
+     android:hint="@string/enter_location"
+      />
+	
+	<!--Check box to select current location-->
+
+	<CheckBox
+	    android:id="@+id/checkBox"
+	    android:layout_width="0dp"
+	    android:layout_height="52dp"
+	    android:layout_weight="1"
+	    android:paddingBottom="5dp"	    
+	    android:background="@drawable/back"
+	    android:text="@string/check_box_map"
+	    android:textColor="#FF9900" />
+	
+</LinearLayout>
+</RelativeLayout>
